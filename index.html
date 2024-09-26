@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Readme Books</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
     <section>
-        <nav>
-            <a href="/">ReadMe Books.</a>
-            <div>
-                <a href="#">Home</a>
-                <a href="#">Categories</a>
-                <a href="#">About</a>
-                <a href="#">Pages</a>
-                <a href="#">Contact</a>
-            </div>
-        </nav>
+      <div class="my-container grid grid-cols-4 py-8 gap-3">
+        <div class="col-span-0.5 flex items-center">
+          <i class="fa-solid fa-book-open-reader text-3xl mr-2 text-[red]"></i>
+          <a href="/" class="text-3xl font-bold">ReadMe Books.</a>
+        </div>
+        <div
+          class="col-span-1.5 search-box flex gap-4 items-center justify-between px-4 border border-2 rounded-full"
+        >
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search book by title or author "
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="flex justify-center gap-4 items-center text-1xl">
+          <a href="#">FAQ</a>
+          <a href="#">Track Order</a>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <button class="btn-sign rounded-full hover:bg-[black] hover:text-white">
+          Sign in
+        </button>
+      </div>
+      <nav>
+        <div class="nav-items font-bold">
+          <a href="#">Home</a>
+          <a href="#">Categories</a>
+          <a href="#">About</a>
+          <a href="#">Pages</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
     </section>
-</body>
+    <section class="hero">
+      <!-- <div class="hero-container flex items-center">
+        <div class="hero-image flex justify-center w-1/2">
+          <img id="book-image" src="./assets/hero-img.png" alt="Hero image" />
+        </div>
+        <div class="hero-info">
+          <h1 id="title" class="text-5xl font-bold">48 Laws of Power</h1>
+          <p>By Robert Greene</p>
+          <p class="text-2xl font-bold">$20.00</p>
+          <button class="btn-add hover:bg-[white] hover:text-black font-bold">Add to Cart</button>
+        </div>
+      </div> -->
+      <h1 class="h1-title">Your Favorite Harry Potter Books</h1>
+      <div id="books"></div>
+    </section>
+  </body>
 </html>

@@ -1,3 +1,78 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.my-container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+.btn-sign {
+  height: 53px;
+  padding: 16px 24px;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.hero {
+  background-color: red;
+  color: white;
+  background-size: 2000px 1000px;
+  /* height: 90vh; */
+  padding: 3rem 0;
+  margin: 10;
+}
+
+.hero-image {
+  height: 80vh;
+}
+
+.hero-image img {
+  object-fit: fill;
+  height: 100%;
+}
+
+.btn-add {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.h1-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
